@@ -24,5 +24,15 @@ namespace AcademiaDoTioZe
         {
             InitializeComponent();
         }
+
+        private void textBox_ID(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_IDAluno(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

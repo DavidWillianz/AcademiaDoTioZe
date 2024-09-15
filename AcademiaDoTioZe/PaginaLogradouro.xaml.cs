@@ -24,5 +24,44 @@ namespace AcademiaDoTioZe
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextID.Focus();
+        }
+
+
+
+        // Mudar o backgroud quando iniciar a tela e da foco a um campo especifico
+        private void Box_GotFocus(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var cor = System.Windows.Media.Brushes.LightCyan;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
+            }
+        }
+        private void Box_LostFocus(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var cor = System.Windows.Media.Brushes.White;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
+            }
+        }
+
+        
     }
 }

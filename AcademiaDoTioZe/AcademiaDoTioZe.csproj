@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Idioma-en-ES.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
