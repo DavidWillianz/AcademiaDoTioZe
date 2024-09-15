@@ -13,7 +13,7 @@
     <Grid Background="White">
         <Rectangle HorizontalAlignment="Left" Height="232" Margin="19,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="771" RenderTransformOrigin="0.093,0.102" Fill="AliceBlue"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="40,128,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,128,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="275,128,0,0" TextWrapping="Wrap" Text="CEP:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
         <TextBlock HorizontalAlignment="Left" Margin="543,128,0,0" TextWrapping="Wrap" Text="LOGRADOURO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,196,0,0" TextWrapping="Wrap" Text="BAIRRO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
@@ -24,7 +24,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="278,262,0,0" TextWrapping="Wrap" Text="PAIS:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
         <TextBlock HorizontalAlignment="Left" Margin="543,262,0,0" TextWrapping="Wrap" Text="COMPLEMENTO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="40,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" TextChanged="TextBox_TextChanged" Name="TextID"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Name="TextID"/>
         <xctk:MaskedTextBox Mask="00000-000" HorizontalAlignment="Left" Margin="275,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
         <TextBox HorizontalAlignment="Left" Margin="543,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
 

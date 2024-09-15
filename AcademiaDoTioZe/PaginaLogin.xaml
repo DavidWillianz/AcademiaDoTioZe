@@ -14,8 +14,8 @@
         <Rectangle HorizontalAlignment="Left" Height="156" Margin="261,128,0,0" Stroke="Black" VerticalAlignment="Top" Width="325" Fill="AliceBlue"/>
         <TextBlock HorizontalAlignment="Left" Margin="295,161,0,0" TextWrapping="Wrap" Text="LOGIN:" VerticalAlignment="Top" RenderTransformOrigin="2.471,1.02"/>
         <TextBlock HorizontalAlignment="Left" Margin="296,228,0,0" TextWrapping="Wrap" Text="SENHA:" VerticalAlignment="Top" RenderTransformOrigin="0.029,0.717"/>
-        <TextBox HorizontalAlignment="Left" Margin="347,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="22"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="347,223,0,0" VerticalAlignment="Top" Width="175" Height="22"/>
+        <TextBox x:Name="idText" HorizontalAlignment="Left" Margin="347,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="22"/>
+        <TextBox x:Name="passwordText" HorizontalAlignment="Left" Margin="347,223,0,0" VerticalAlignment="Top" Width="175" Height="22"/>
 
         <Button Content="ENTRAR" HorizontalAlignment="Left" Margin="593,374,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
     </Grid>

@@ -23,6 +23,12 @@ namespace AcademiaDoTioZe
         public PaginaLogin()
         {
             InitializeComponent();
+            idText.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idText.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            passwordText.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            passwordText.LostFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
         }
+
+  
     }
 }

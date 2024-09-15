@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows;
+using System.Windows.Input;
+using System.Windows.Controls;
 
 namespace AcademiaDoTioZe
 {
@@ -35,6 +37,76 @@ namespace AcademiaDoTioZe
                 }
                 // Chama recursivamente para percorrer os filhos do filho atual
                 AjustaResources(child);
+            }
+        }
+
+        // 
+        /// <summary>
+        /// Tratar eventos de teclado, no caso tecla ENTER funcionando com TAB e tecla ESC para fechar
+        /// </summary>
+        /// <param name="sender">Objeto que gerou o evento</param>
+        /// <param name="e">Evento que foi capturado</param>
+        /// <example>No construtor do formulário:
+        /// this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+        ///</example>
+        public static void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Se a tecla ENTER for pressionada
+            if (e.Key == Key.Enter)
+            {
+                // Move o foco para o próximo controle, como o TAB faria
+                var focusedElement = Keyboard.FocusedElement as UIElement;
+                // Move o foco para o próximo controle na ordem de tabulação
+                focusedElement?.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
+                e.Handled = true; // Previne comportamento padrão do ENTER (como som)
+            }
+            // Se a tecla ESC for pressionada
+            else if (e.Key == Key.Escape)
+            {
+                // verifica se é window e fecha
+                if (sender is Window window)
+                {
+                    window.Close();
+                }
+                // carrega uma página inicial
+                else
+                {
+                    if (Application.Current.MainWindow is MainWindow mainWindow)
+                    {
+                        // precisa passar o método para public
+                        mainWindow.BotaoHome(sender, e);
+                    }
+                }
+            }
+        }
+
+        // Mudar a cor quando o usuario selecionar campo
+        public static void Box_GotFocus(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var cor = System.Windows.Media.Brushes.LightCyan;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
+            }
+        }
+        public static void Box_LostFocus(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var cor = System.Windows.Media.Brushes.White;
+            if (sender is TextBox)
+            {
+                TextBox textBox = (TextBox)sender;
+                textBox.Background = cor;
+            }
+            else if (sender is PasswordBox)
+            {
+                PasswordBox passwordBox = (PasswordBox)sender;
+                passwordBox.Background = cor;
             }
         }
     }

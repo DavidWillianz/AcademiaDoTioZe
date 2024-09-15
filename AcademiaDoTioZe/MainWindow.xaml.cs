@@ -20,6 +20,8 @@ namespace AcademiaDoTioZe
         public MainWindow()
         {
             InitializeComponent();
+            this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
 
         private void ChangeLanguage(string cultureCode)
@@ -37,7 +39,7 @@ namespace AcademiaDoTioZe
             oldWindow.Close();
         }
 
-        private void BotaoHome(object sender, RoutedEventArgs e)
+        public void BotaoHome(object sender, RoutedEventArgs e)
         {
 
         }

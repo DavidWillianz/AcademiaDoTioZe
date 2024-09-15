@@ -21,11 +21,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="400,57,0,0" TextWrapping="Wrap" Text="NOME ALUNO:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="602,57,0,0" TextWrapping="Wrap" Text="DATA:" VerticalAlignment="Top" RenderTransformOrigin="6.783,0.342"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="24,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22" />
-        <TextBox HorizontalAlignment="Left" Margin="144,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22" />
-        <xctk:MaskedTextBox Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="250,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="22"/>
+        <TextBox x:Name="textId" HorizontalAlignment="Left" Margin="24,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"  />
+        <TextBox x:Name="idAluno" HorizontalAlignment="Left" Margin="144,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22" />
+        <xctk:MaskedTextBox x:Name="cpfAluno" Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="250,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="22"/>
 	
-        <TextBox HorizontalAlignment="Left" Margin="397,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="22" />
+        <TextBox x:Name="nomeAluno" HorizontalAlignment="Left" Margin="397,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="22" />
         <DatePicker HorizontalAlignment="Left" Margin="602,78,0,0" VerticalAlignment="Top" Height="22"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="24,130,0,0" TextWrapping="Wrap" Text="PESO (KG):" VerticalAlignment="Top"/>
@@ -38,25 +38,25 @@
         <TextBlock HorizontalAlignment="Left" Margin="368,185,0,0" TextWrapping="Wrap" Text="BICEPS DIR:" VerticalAlignment="Top" RenderTransformOrigin="0.111,0.624"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,243,0,0" TextWrapping="Wrap" Text="COXA ESQ:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="144,240,0,0" TextWrapping="Wrap" Text="COXA DIR:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="250,240,0,0" TextWrapping="Wrap" Text="PANTURRILHA DIR:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="368,243,0,0" TextWrapping="Wrap" Text="PANTURRILHA ESQ:" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.348"/>
+        <TextBlock HorizontalAlignment="Left" Margin="250,240,0,0" TextWrapping="Wrap" Text="PANTURRILHA ESQ:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="368,243,0,0" TextWrapping="Wrap" Text="PANTURRILHA DIR:" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.348"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,297,0,0" TextWrapping="Wrap" Text="QUADRIL:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="144,297,0,0" TextWrapping="Wrap" Text="OBSERVAÇÕES:" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.348"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="25,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="144,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="250,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="144,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="250,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="144,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="250,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="368,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="35"/>
-        <TextBox HorizontalAlignment="Left" Margin="144,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="35"/>
+        <TextBox x:Name="pesoKg" HorizontalAlignment="Left" Margin="25,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="altura" HorizontalAlignment="Left" Margin="144,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="torax" HorizontalAlignment="Left" Margin="250,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="cintura" HorizontalAlignment="Left" Margin="368,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
+        <TextBox x:Name="antebracoEsq" HorizontalAlignment="Left" Margin="25,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="antebracoDir" HorizontalAlignment="Left" Margin="144,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="bicepsEsq" HorizontalAlignment="Left" Margin="250,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="bicepsDir" HorizontalAlignment="Left" Margin="368,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
+        <TextBox x:Name="coxaEsq" HorizontalAlignment="Left" Margin="25,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="coxaDir" HorizontalAlignment="Left" Margin="144,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="panturrilhaEsq" HorizontalAlignment="Left" Margin="250,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
+        <TextBox x:Name="panturrilhaDir" HorizontalAlignment="Left" Margin="368,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" Height="22"/>
+        <TextBox x:Name="quadril" HorizontalAlignment="Left" Margin="25,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="35"/>
+        <TextBox x:Name="obs" HorizontalAlignment="Left" Margin="144,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="35"/>
 
         <Rectangle HorizontalAlignment="Left" Height="259" Margin="488,118,0,0" Stroke="Black" VerticalAlignment="Top" Width="293" Fill="AliceBlue"/>
         <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
@@ -66,10 +66,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="508,243,0,0" TextWrapping="Wrap" Text="PESO IDEAL:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="654,243,0,0" TextWrapping="Wrap" Text="IMC:" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="508,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="654,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="508,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="508,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="654,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="massaMagra" HorizontalAlignment="Left" Margin="508,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="massaGorda" HorizontalAlignment="Left" Margin="654,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="percentualGordura" HorizontalAlignment="Left" Margin="508,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Height="22"/>
+        <TextBox x:Name="pesoIdeal" HorizontalAlignment="Left" Margin="508,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="imc" HorizontalAlignment="Left" Margin="654,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
     </Grid>
 </Page>
