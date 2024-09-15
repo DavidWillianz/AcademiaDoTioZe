@@ -1,0 +1,30 @@
+﻿<Window x:Class="AcademiaDoTioZe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademiaDoTioZe.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3" ></ColumnDefinition>
+            <ColumnDefinition Width="786"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="home" Content="HOME" HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoHome" Grid.Column="1"/>
+        <Button x:Name="logradouro" Content="LOGRADOURO" HorizontalAlignment="Left" Margin="21,58,0,0" VerticalAlignment="Top"  Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoLogradouro" Grid.Column="1"/>
+        <Button x:Name="cadastroAluno" Content="CADASTRO ALUNO" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroAluno" Grid.Column="1"/>
+        <Button x:Name="cadastroColaborador" Content="CADASTRO COLABORADOR" HorizontalAlignment="Left" Margin="21,132,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroColaborador" Grid.Column="1"/>
+        <Button x:Name="senha" Content="SENHA" HorizontalAlignment="Left" Margin="21,169,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroSenha" Grid.Column="1"/>
+        <Button x:Name="matricula" Content="MATRICULA" HorizontalAlignment="Left" Margin="21,206,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroMatricula" Grid.Column="1"/>
+        <Button x:Name="avaliacao" Content="AVALIACAO" HorizontalAlignment="Left" Margin="21,243,0,0" VerticalAlignment="Top"  Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroAvaliacao" Grid.Column="1"/>
+        <Button x:Name="frequencia" Content="FREQUENCIA" HorizontalAlignment="Left"  Margin="21,280,0,0" VerticalAlignment="Top"  Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroFrequencia" Grid.Column="1"/>
+        <Button x:Name="aulas" Content="AULAS" HorizontalAlignment="Left"  Margin="21,317,0,0" VerticalAlignment="Top"  Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroAulas" Grid.Column="1"/>
+        <Button x:Name="treinos" Content="TREINOS" HorizontalAlignment="Left" Margin="21,354,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoTreinos" Grid.Column="1"/>
+        <Button x:Name="loginLogout" Content="LOGIN/LOGOUT" HorizontalAlignment="Left" Margin="21,391,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoLoginLogout" Grid.Column="1"/>
+        <Frame Name="MainFrame" Margin="135,0,0,0" Grid.ColumnSpan="2" Grid.Column="1"/>
+    </Grid>
+</Window>

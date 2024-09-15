@@ -1,0 +1,38 @@
+﻿<Page x:Class="AcademiaDoTioZe.PaginaLogradouro"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademiaDoTioZe"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PaginaLogradouro">
+
+    <Grid Background="White">
+        <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="232" Margin="19,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="771" RenderTransformOrigin="0.093,0.102" Fill="AliceBlue"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="40,128,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,128,0,0" TextWrapping="Wrap" Text="CEP:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,128,0,0" TextWrapping="Wrap" Text="LOGRADOURO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,196,0,0" TextWrapping="Wrap" Text="BAIRRO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,196,0,0" TextWrapping="Wrap" Text="CIDADE:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,196,0,0" TextWrapping="Wrap" Text="NUMERO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="40,262,0,0" TextWrapping="Wrap" Text="UF:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="278,262,0,0" TextWrapping="Wrap" Text="PAIS:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,262,0,0" TextWrapping="Wrap" Text="COMPLEMENTO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="40,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="275,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="543,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="40,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="275,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="543,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="40,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="275,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="543,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+    </Grid>
+</Page>

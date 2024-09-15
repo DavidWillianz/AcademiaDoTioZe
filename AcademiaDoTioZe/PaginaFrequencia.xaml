@@ -1,0 +1,32 @@
+﻿<Page x:Class="AcademiaDoTioZe.PaginaFrequencia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademiaDoTioZe"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PaginaFrequencia">
+
+    <Grid Background="AliceBlue">
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="CADASTRAR FREQUENIA" VerticalAlignment="Top" Height="24" Width="269" FontFamily="Arial Rounded MT Bold" FontSize="18" Opacity="0.75"/>
+        <Rectangle HorizontalAlignment="Center" Height="220" Margin="0,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="White"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="25,58,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="159,58,0,0" TextWrapping="Wrap" Text="ID ALUNO:" VerticalAlignment="Top" RenderTransformOrigin="-0.846,0.394"/>
+        <TextBlock HorizontalAlignment="Left" Margin="275,58,0,0" TextWrapping="Wrap" Text="CPF ALUNO:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,124,0,0" TextWrapping="Wrap" Text="ENTRADA:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,185,0,0" TextWrapping="Wrap" Text="SAIDA:" VerticalAlignment="Top" RenderTransformOrigin="0.605,2.399"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="25,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="275,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="22"/>
+
+
+        <DatePicker HorizontalAlignment="Left" Margin="25,145,0,0" VerticalAlignment="Top" Height="22" Width="370"/>
+        <DatePicker HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Height="22" Width="370"/>
+
+
+        <Button Content="SALVAR" HorizontalAlignment="Left" Margin="308,280,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
+    </Grid>
+</Page>

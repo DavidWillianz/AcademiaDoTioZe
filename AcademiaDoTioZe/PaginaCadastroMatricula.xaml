@@ -1,0 +1,48 @@
+﻿<Page x:Class="AcademiaDoTioZe.PaginaCadastroMatricula"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademiaDoTioZe"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PaginaCadastroMatricula">
+
+    <Grid Background="AliceBlue">
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="CADASTRO DE MATRICULAS" VerticalAlignment="Top" Height="24" Width="269" FontFamily="Arial Rounded MT Bold" FontSize="18" Opacity="0.75"/>
+
+        <Rectangle HorizontalAlignment="Center" Height="350" Margin="0,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="162" Margin="16,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="399" Fill="AliceBlue"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,66,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" RenderTransformOrigin="0.243,-0.041"/>
+        <TextBlock HorizontalAlignment="Left" Margin="144,66,0,0" TextWrapping="Wrap" Text="ID ALUNO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+        <TextBlock HorizontalAlignment="Left" Margin="264,66,0,0" TextWrapping="Wrap" Text="CPF ALUNO:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,138,0,0" TextWrapping="Wrap" Text="NOME ALUNO:" VerticalAlignment="Top"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="25,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="144,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="264,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="25,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="22"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="163" Margin="420,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="359" Fill="AliceBlue"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,66,0,0" TextWrapping="Wrap" Text="RESTRIÇÕES:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="661,66,0,0" TextWrapping="Wrap" Text="LAUDO MÉDICO:" VerticalAlignment="Top" RenderTransformOrigin="0.197,0.563"/>
+        <Button Content="LAUDO" HorizontalAlignment="Left" Margin="661,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.236" Width="90"/>
+        <TextBox HorizontalAlignment="Left" Margin="661,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="78"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="163" Margin="16,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="399" Fill="AliceBlue"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,240,0,0" TextWrapping="Wrap" Text="PLANO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+        <TextBlock HorizontalAlignment="Left" Margin="264,240,0,0" TextWrapping="Wrap" Text="INICIO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+        <TextBlock HorizontalAlignment="Left" Margin="264,307,0,0" TextWrapping="Wrap" Text="FIM:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+
+        <DatePicker HorizontalAlignment="Left" Margin="264,265,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="264,329,0,0" VerticalAlignment="Top"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="163" Margin="420,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="359" Fill="AliceBlue"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,240,0,0" TextWrapping="Wrap" Text="OBJETIVO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,307,0,0" TextWrapping="Wrap" Text="OBSERVAÇÃO/RESTRIÇÃO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
+        <TextBox HorizontalAlignment="Left" Margin="435,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="435,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
+
+        <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
+    </Grid>
+</Page>
