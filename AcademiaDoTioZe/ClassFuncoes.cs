@@ -109,5 +109,19 @@ namespace AcademiaDoTioZe
                 passwordBox.Background = cor;
             }
         }
+
+        public static void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // Exibe uma mensagem de confirmação
+            var result = MessageBox.Show("Você realmente deseja fechar a aplicação?", "Confirmar Fechamento", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            // Se o usuário clicar em "Não", cancela o fechamento
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+
     }
 }

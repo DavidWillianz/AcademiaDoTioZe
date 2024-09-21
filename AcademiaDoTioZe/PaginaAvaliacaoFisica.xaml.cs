@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AcademiaDoTioZe
 {
@@ -23,6 +24,15 @@ namespace AcademiaDoTioZe
         public PaginaAvaliacaoFisica()
         {
             InitializeComponent();
+
+            textId.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            textId.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            idAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
             pesoKg.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             pesoKg.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
@@ -52,6 +62,17 @@ namespace AcademiaDoTioZe
             quadril.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
             obs.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             obs.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            massaMagra.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            massaMagra.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            massaGorda.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            massaGorda.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            percentualGordura.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            percentualGordura.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            pesoIdeal.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            pesoIdeal.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            imc.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            imc.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
         }
     }
 }

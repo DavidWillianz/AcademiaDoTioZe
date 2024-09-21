@@ -20,9 +20,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="25,124,0,0" TextWrapping="Wrap" Text="ENTRADA:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,185,0,0" TextWrapping="Wrap" Text="SAIDA:" VerticalAlignment="Top" RenderTransformOrigin="0.605,2.399"/>
 
-        <TextBox Name="Id" HorizontalAlignment="Left" Margin="25,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <xctk:MaskedTextBox Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="275,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox Name="id" HorizontalAlignment="Left" Margin="25,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="idAluno" HorizontalAlignment="Left" Margin="150,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <xctk:MaskedTextBox Mask="000\.000\.000\-00" x:Name="cpfAluno" HorizontalAlignment="Left" Margin="275,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
 
         <DatePicker HorizontalAlignment="Left" Margin="25,145,0,0" VerticalAlignment="Top" Height="22" Width="370"/>
         <DatePicker HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Height="22" Width="370"/>

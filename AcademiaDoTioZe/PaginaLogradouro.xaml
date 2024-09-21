@@ -24,17 +24,17 @@
         <TextBlock HorizontalAlignment="Left" Margin="278,262,0,0" TextWrapping="Wrap" Text="PAIS:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
         <TextBlock HorizontalAlignment="Left" Margin="543,262,0,0" TextWrapping="Wrap" Text="COMPLEMENTO:" VerticalAlignment="Top" RenderTransformOrigin="2.064,0.537"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="40,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" Name="TextID"/>
-        <xctk:MaskedTextBox Mask="00000-000" HorizontalAlignment="Left" Margin="275,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="543,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Margin="40,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <xctk:MaskedTextBox Mask="00000-000" x:Name="cpf" HorizontalAlignment="Left" Margin="275,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="logradouro" HorizontalAlignment="Left" Margin="543,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="40,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="275,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="543,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="bairro" HorizontalAlignment="Left" Margin="40,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="cidade" HorizontalAlignment="Left" Margin="275,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="numero" HorizontalAlignment="Left" Margin="543,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="40,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="275,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="543,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="uf" HorizontalAlignment="Left" Margin="40,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="pais" HorizontalAlignment="Left" Margin="275,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="complemento" HorizontalAlignment="Left" Margin="543,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
         <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,375,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
     </Grid>
 </Page>

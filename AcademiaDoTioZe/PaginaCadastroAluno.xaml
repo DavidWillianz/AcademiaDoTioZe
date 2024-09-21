@@ -21,16 +21,16 @@
         <TextBlock HorizontalAlignment="Left" Margin="238,154,0,0" TextWrapping="Wrap" Text="E-MAIL:" VerticalAlignment="Top"/>
 
 
-        <TextBox HorizontalAlignment="Left" Margin="25,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
-        <xctk:MaskedTextBox Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="238,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <xctk:MaskedTextBox Mask="(000) 0000-0000" HorizontalAlignment="Left" Margin="389,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="22"/>
-        <xctk:MaskedTextBox Mask="nome@sub.dominio.com" HorizontalAlignment="Left" Margin="238,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" Height="22"/>
-        <DatePicker HorizontalAlignment="Left" Margin="25,170,0,0" VerticalAlignment="Top" Height="22" Width="150"/>
+        <TextBox x:Name="idAluno" HorizontalAlignment="Left" Margin="25,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
+        <xctk:MaskedTextBox Mask="000\.000\.000\-00" x:Name="cpfAluno" HorizontalAlignment="Left" Margin="238,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <xctk:MaskedTextBox Mask="(000) 0000-0000" x:Name="telefoneAluno" HorizontalAlignment="Left" Margin="389,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="nomeAluno" HorizontalAlignment="Left" Margin="25,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="22"/>
+        <DatePicker x:Name="nascimentoAluno" HorizontalAlignment="Left" Margin="25,170,0,0" VerticalAlignment="Top" Height="22" Width="150"/>
+        <xctk:MaskedTextBox Mask="nome@sub.dominio.com" x:Name="emailAluno" HorizontalAlignment="Left" Margin="238,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" Height="22"/>
 
         <Rectangle HorizontalAlignment="Left" Height="166" Margin="527,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="263" RenderTransformOrigin="0.093,0.102" Fill="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="540,48,0,0" TextWrapping="Wrap" Text="ADMISSÃO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
-        <DatePicker HorizontalAlignment="Left" Margin="540,69,0,0" VerticalAlignment="Top" Height="22" Width="150"/>
+        <DatePicker x:Name="dataAdmissao" HorizontalAlignment="Left" Margin="540,69,0,0" VerticalAlignment="Top" Height="22" Width="150"/>
 
         <Rectangle HorizontalAlignment="Left" Height="41" Margin="540,99,0,0" Stroke="Black" VerticalAlignment="Top" Width="238" RenderTransformOrigin="0.093,0.102" Fill="AliceBlue"/>
 

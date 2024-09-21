@@ -20,6 +20,7 @@ namespace AcademiaDoTioZe
         public MainWindow()
         {
             InitializeComponent();
+            this.Closing += ClassFuncoes.MainWindow_Closing;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }

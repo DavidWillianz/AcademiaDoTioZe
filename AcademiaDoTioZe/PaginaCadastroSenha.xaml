@@ -19,11 +19,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="25,177,0,0" TextWrapping="Wrap" Text="SENHA:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="230,177,0,0" TextWrapping="Wrap" Text="CONFIRME A SUA SENHA:" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="25,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <xctk:MaskedTextBox Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="230,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="138" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" Height="22"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="24,207,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="230,207,0,0" VerticalAlignment="Top" Width="138" Height="22"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Margin="25,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <xctk:MaskedTextBox Mask="000\.000\.000\-00" x:Name="cpf" HorizontalAlignment="Left" Margin="230,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="138" Height="22"/>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Margin="25,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" Height="22"/>
+        <PasswordBox x:Name="senha" HorizontalAlignment="Left" Margin="24,207,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <PasswordBox x:Name="confirmSenha" HorizontalAlignment="Left" Margin="230,207,0,0" VerticalAlignment="Top" Width="138" Height="22"/>
         <Button Content="SALVAR" HorizontalAlignment="Left" Margin="294,275,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
     </Grid>
 </Page>

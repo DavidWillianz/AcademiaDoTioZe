@@ -21,7 +21,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="400,57,0,0" TextWrapping="Wrap" Text="NOME ALUNO:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="602,57,0,0" TextWrapping="Wrap" Text="DATA:" VerticalAlignment="Top" RenderTransformOrigin="6.783,0.342"/>
 
-        <TextBox x:Name="textId" HorizontalAlignment="Left" Margin="24,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"  />
+        <TextBox x:Name="textId" HorizontalAlignment="Left" Margin="24,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22"/>
         <TextBox x:Name="idAluno" HorizontalAlignment="Left" Margin="144,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="22" />
         <xctk:MaskedTextBox x:Name="cpfAluno" Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="250,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="22"/>
 	

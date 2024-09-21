@@ -19,18 +19,18 @@
         <TextBlock HorizontalAlignment="Left" Margin="264,66,0,0" TextWrapping="Wrap" Text="CPF ALUNO:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,138,0,0" TextWrapping="Wrap" Text="NOME ALUNO:" VerticalAlignment="Top"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="25,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="144,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
-        <xctk:MaskedTextBox Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="264,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="25,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="22"/>
+        <TextBox x:Name="idMatricula" HorizontalAlignment="Left" Margin="25,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
+        <TextBox x:Name="idAluno" HorizontalAlignment="Left" Margin="144,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="22"/>
+        <xctk:MaskedTextBox Mask="000\.000\.000\-00" x:Name="cpfAluno" HorizontalAlignment="Left" Margin="264,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="22"/>
+        <TextBox x:Name="nomeAluno" HorizontalAlignment="Left" Margin="25,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="22"/>
 
         <Rectangle HorizontalAlignment="Left" Height="163" Margin="420,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="359" Fill="AliceBlue"/>
         <TextBlock HorizontalAlignment="Left" Margin="435,66,0,0" TextWrapping="Wrap" Text="RESTRIÇÕES:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="432,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="73"/>
+        <TextBox x:Name="restricoes" HorizontalAlignment="Left" Margin="432,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="73"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="661,66,0,0" TextWrapping="Wrap" Text="LAUDO MÉDICO:" VerticalAlignment="Top" RenderTransformOrigin="0.197,0.563"/>
         <Button Content="LAUDO" HorizontalAlignment="Left" Margin="661,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.236" Width="90"/>
-        <TextBox HorizontalAlignment="Left" Margin="661,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="78"/>
+        <TextBox x:Name="laudoMedico" HorizontalAlignment="Left" Margin="661,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="78"/>
 
         <Rectangle HorizontalAlignment="Left" Height="163" Margin="16,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="399" Fill="AliceBlue"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,240,0,0" TextWrapping="Wrap" Text="PLANO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
@@ -43,8 +43,8 @@
         <Rectangle HorizontalAlignment="Left" Height="163" Margin="420,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="359" Fill="AliceBlue"/>
         <TextBlock HorizontalAlignment="Left" Margin="435,240,0,0" TextWrapping="Wrap" Text="OBJETIVO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
         <TextBlock HorizontalAlignment="Left" Margin="435,307,0,0" TextWrapping="Wrap" Text="OBSERVAÇÃO/RESTRIÇÃO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
-        <TextBox HorizontalAlignment="Left" Margin="435,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="435,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
+        <TextBox x:Name="objetivoAluno" HorizontalAlignment="Left" Margin="435,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
+        <TextBox x:Name="observacoes" HorizontalAlignment="Left" Margin="435,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
 
         <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
     </Grid>

@@ -23,8 +23,22 @@ namespace AcademiaDoTioZe
         public PaginaCadastroAluno()
         {
             InitializeComponent();
-
             this.Loaded += Page_Loaded;
+
+            idAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            telefoneAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            telefoneAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            emailAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            emailAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

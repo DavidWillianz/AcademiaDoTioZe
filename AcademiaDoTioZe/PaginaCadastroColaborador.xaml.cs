@@ -23,6 +23,27 @@ namespace AcademiaDoTioZe
         public PaginaCadastroColaborador()
         {
             InitializeComponent();
+            idColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            cpfColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cpfColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            telefoneColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            telefoneColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            nomeColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            nomeColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            emailColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            emailColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            numeroCasa.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            numeroCasa.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            complementoEndereco.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            complementoEndereco.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
         }
     }
 }

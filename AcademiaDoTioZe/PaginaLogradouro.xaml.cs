@@ -23,6 +23,33 @@ namespace AcademiaDoTioZe
         public PaginaLogradouro()
         {
             InitializeComponent();
+            id.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            id.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            cpf.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cpf.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            logradouro.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            logradouro.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            bairro.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            bairro.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            cidade.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cidade.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            numero.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            numero.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            uf.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            uf.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            pais.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            pais.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            complemento.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            complemento.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
         }
     }
 }

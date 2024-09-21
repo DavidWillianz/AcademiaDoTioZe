@@ -23,6 +23,21 @@ namespace AcademiaDoTioZe
         public PaginaCadastroSenha()
         {
             InitializeComponent();
+            id.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            id.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            cpf.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            cpf.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            nome.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            nome.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            senha.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            senha.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            confirmSenha.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            confirmSenha.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
         }
     }
 }
