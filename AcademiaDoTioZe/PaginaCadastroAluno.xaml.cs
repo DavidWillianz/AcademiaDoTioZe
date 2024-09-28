@@ -39,6 +39,19 @@ namespace AcademiaDoTioZe
 
             emailAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             emailAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            //----
+            idLogradouro.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idLogradouro.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            numero.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            numero.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            complemento.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            complemento.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            senha.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            senha.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

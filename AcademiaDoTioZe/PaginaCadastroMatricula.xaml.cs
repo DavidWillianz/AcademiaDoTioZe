@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,11 +30,17 @@ namespace AcademiaDoTioZe
             idAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             idAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
-            cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
-            cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            idColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
-            nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
-            nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            //cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            //cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            //nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            //nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            plano.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            plano.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
             restricoes.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             restricoes.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);

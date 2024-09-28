@@ -11,31 +11,34 @@
 
     <Grid Background="AliceBlue">
         <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="CADASTRO COLABORADOR" VerticalAlignment="Top" Height="24" Width="269" FontFamily="Arial Rounded MT Bold" FontSize="18" Opacity="0.75"/>
-        <Rectangle HorizontalAlignment="Left" Height="166" Margin="6,0,0,242" Stroke="Black" VerticalAlignment="Bottom" Width="516" RenderTransformOrigin="0.093,0.102" Fill="White"/>
-
+        <Rectangle HorizontalAlignment="Left" Height="166" Margin="6,0,0,242" Stroke="Black" VerticalAlignment="Bottom" Width="569" RenderTransformOrigin="0.093,0.102" Fill="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,48,0,0" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
         <TextBlock HorizontalAlignment="Left" Margin="238,48,0,0" TextWrapping="Wrap" Text="CPF:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="389,48,0,0" TextWrapping="Wrap" Text="TELEFONE:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="25,91,0,0" TextWrapping="Wrap" Text="NOME:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,99,0,0" TextWrapping="Wrap" Text="NOME:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,154,0,0" TextWrapping="Wrap" Text="NASCIMENTO:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="238,154,0,0" TextWrapping="Wrap" Text="E-MAIL:" VerticalAlignment="Top"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="389,99,0,0" TextWrapping="Wrap" Text="ADMISSÃO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
 
         <TextBox x:Name="idColaborador" HorizontalAlignment="Left" Margin="25,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
         <xctk:MaskedTextBox x:Name="cpfColaborador" Mask="000\.000\.000\-00" HorizontalAlignment="Left" Margin="238,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="telefoneColaborador" HorizontalAlignment="Left" Margin="389,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
-        <TextBox x:Name="nomeColaborador" HorizontalAlignment="Left" Margin="25,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Height="22"/>
-        <TextBox x:Name="emailColaborador" HorizontalAlignment="Left" Margin="238,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <xctk:MaskedTextBox x:Name="telefoneColaborador" Mask="(000) 0000-0000" HorizontalAlignment="Left" Margin="389,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Height="22"/>
+        <TextBox x:Name="nomeColaborador" HorizontalAlignment="Left" Margin="24,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Height="22"/>
+        <DatePicker Margin="389,123,250,0" VerticalAlignment="Top" Height="22"/>
         <DatePicker HorizontalAlignment="Left" Margin="25,170,0,0" VerticalAlignment="Top" Width="150" Height="22"/>
+        <xctk:MaskedTextBox Mask="nome@sub.dominio.com" x:Name="emailColaborador" HorizontalAlignment="Left" Margin="238,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="22"/>
 
-        <Rectangle HorizontalAlignment="Left" Height="166" Margin="527,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="263" RenderTransformOrigin="0.093,0.102" Fill="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="538,48,0,0" TextWrapping="Wrap" Text="NUMERO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
-        <TextBlock HorizontalAlignment="Left" Margin="538,94,0,0" TextWrapping="Wrap" Text="COMPLEMENTO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
-        <TextBlock HorizontalAlignment="Left" Margin="538,154,0,0" TextWrapping="Wrap" Text="ADMISSÃO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
+        <Rectangle HorizontalAlignment="Left" Height="162" Margin="6,218,0,0" Stroke="Black" VerticalAlignment="Top" Width="569" RenderTransformOrigin="0.093,0.102" Fill="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,240,0,0" TextWrapping="Wrap" Text="ID LOGRADOURO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
 
-        <TextBox x:Name="numeroCasa" HorizontalAlignment="Left" Margin="538,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
-        <TextBox x:Name="complementoEndereco" HorizontalAlignment="Left" Margin="538,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
-        <DatePicker HorizontalAlignment="Left" Margin="538,175,0,0" VerticalAlignment="Top" Width="150" Height="22"/>
-        <Button Content="SALVAR" HorizontalAlignment="Left" Margin="684,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" RenderTransformOrigin="0.367,0.028"/>
+        <TextBlock HorizontalAlignment="Left" Margin="238,240,0,0" TextWrapping="Wrap" Text="NUMERO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,311,0,0" TextWrapping="Wrap" Text="COMPLEMENTO:" VerticalAlignment="Top" RenderTransformOrigin="0.968,-2.219"/>
+        <TextBlock HorizontalAlignment="Left" Margin="239,311,0,0" TextWrapping="Wrap" Text="SENHA:" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="idLogradouro" HorizontalAlignment="Left" Margin="25,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
+        <TextBox x:Name="numeroCasa" HorizontalAlignment="Left" Margin="238,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="22"/>
+        <TextBox x:Name="complementoEndereco" HorizontalAlignment="Left" Margin="24,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22"/>
+        <TextBox x:Name="senha" HorizontalAlignment="Left" Margin="238,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312" Height="22"/>
+        <Button Content="SALVAR" HorizontalAlignment="Left" Margin="345,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" RenderTransformOrigin="0.367,0.028"/>
     </Grid>
 </Page>

@@ -29,10 +29,10 @@ namespace AcademiaDoTioZe
             textId.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
             idAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             idAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
-            cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
-            cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
-            nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
-            nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            idColaborador.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idColaborador.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+            //nomeAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            //nomeAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
             pesoKg.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             pesoKg.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);

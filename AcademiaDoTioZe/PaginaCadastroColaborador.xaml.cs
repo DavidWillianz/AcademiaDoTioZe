@@ -44,6 +44,17 @@ namespace AcademiaDoTioZe
             complementoEndereco.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             complementoEndereco.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
+            idLogradouro.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            idLogradouro.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            numeroCasa.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            numeroCasa.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            complementoEndereco.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            complementoEndereco.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
+
+            senha.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
+            senha.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
         }
     }
 }

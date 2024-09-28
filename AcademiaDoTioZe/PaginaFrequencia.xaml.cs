@@ -28,9 +28,6 @@ namespace AcademiaDoTioZe
 
             idAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
             idAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
-
-            cpfAluno.GotFocus += (sender, e) => ClassFuncoes.Box_GotFocus(sender, e);
-            cpfAluno.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
         }
     }
 }
