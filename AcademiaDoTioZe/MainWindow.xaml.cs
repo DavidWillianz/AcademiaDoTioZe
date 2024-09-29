@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Configuration;
+using System.Globalization;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,12 +18,24 @@ namespace AcademiaDoTioZe
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Atributos para conexão e persistência com o banco de dados
+        private string ConnectionString { get; set; }
+        private string ProviderName { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
             this.Closing += ClassFuncoes.MainWindow_Closing;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            // valida a conexão com o banco de dados
+            ClassFuncoes.ValidaConexaoDB();
+
+            // busca os dados de conexão com o banco de dados, do arquivo de configuração
+            // e deixa disponível para toda a aplicação através de propriedades
+            ProviderName = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
         }
 
         private void ChangeLanguage(string cultureCode)
@@ -40,9 +53,11 @@ namespace AcademiaDoTioZe
             oldWindow.Close();
         }
 
-        public void BotaoHome(object sender, RoutedEventArgs e)
+        public void BotaoWindowConfig(object sender, RoutedEventArgs e)
         {
-
+            var providername = this.ProviderName;
+            var connection = this.ConnectionString;
+            MainFrame.Content = new WindowConfig(providername, connection);
         }
 
         private void BotaoLogradouro(object sender, RoutedEventArgs e)

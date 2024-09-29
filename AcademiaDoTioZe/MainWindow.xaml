@@ -14,7 +14,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="home" Content="HOME" HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoHome" Grid.Column="1"/>
+        <Button x:Name="window_conf" Content="WINDOW CONF" HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoWindowConfig" Grid.Column="1"/>
         <Button x:Name="logradouro" Content="LOGRADOURO" HorizontalAlignment="Left" Margin="21,58,0,0" VerticalAlignment="Top"  Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoLogradouro" Grid.Column="1"/>
         <Button x:Name="cadastroAluno" Content="CADASTRO ALUNO" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroAluno" Grid.Column="1"/>
         <Button x:Name="cadastroColaborador" Content="CADASTRO COLABORADOR" HorizontalAlignment="Left" Margin="21,132,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="BotaoCadastroColaborador" Grid.Column="1"/>

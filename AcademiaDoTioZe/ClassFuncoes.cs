@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Controls;
+using System.Configuration;
+using System.Data.Common;
 
 namespace AcademiaDoTioZe
 {
@@ -74,7 +76,7 @@ namespace AcademiaDoTioZe
                     if (Application.Current.MainWindow is MainWindow mainWindow)
                     {
                         // precisa passar o método para public
-                        mainWindow.BotaoHome(sender, e);
+                        mainWindow.BotaoWindowConfig(sender, e);
                     }
                 }
             }
@@ -121,7 +123,34 @@ namespace AcademiaDoTioZe
                 e.Cancel = true;
             }
         }
-
-
+        public static void ValidaConexaoDB()
+        {
+            DbProviderFactory factory;
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(provider);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = connectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (DbException ex)
+            {
+                MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.ErrorCode}\n\n{ex.SqlState}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider, connectionString);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider, connectionString);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
+            }
+        }
     }
 }
