@@ -140,14 +140,14 @@ namespace AcademiaDoTioZe
             catch (DbException ex)
             {
                 MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.ErrorCode}\n\n{ex.SqlState}\n\n{ex.StackTrace}");
-                var auxConfig = new WindowConfig(provider, connectionString);
+                var auxConfig = new WindowConfig();
                 auxConfig.ShowDialog();
                 ValidaConexaoDB();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.StackTrace}");
-                var auxConfig = new WindowConfig(provider, connectionString);
+                var auxConfig = new WindowConfig();
                 auxConfig.ShowDialog();
                 ValidaConexaoDB();
             }

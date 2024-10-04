@@ -12,11 +12,11 @@
 
         <Label x:Name="labelAtiva" Content="Configurações" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="20" Height="37" Width="259"/>
         <Label x:Name="labelIdioma" Content="Idioma/Região:" HorizontalAlignment="Left" Margin="31,80,0,0" VerticalAlignment="Top" Foreground="Black" Height="26" Width="130"/>
-        <!-- <ComboBox x:Name="comboBoxIdioma" HorizontalAlignment="Left" Margin="36,111,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+        <ComboBox x:Name="comboBoxIdioma" HorizontalAlignment="Left" Margin="36,111,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
             <System:String>pt-BR</System:String>
             <System:String>en-US</System:String>
             <System:String>es-ES</System:String>
-        </ComboBox> -->
+        </ComboBox> 
         <Button x:Name="salvaIdioma" Content="Salvar Idioma" HorizontalAlignment="Left" Margin="31,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.045,-0.972" Background="#FF64B2DA" Foreground="AliceBlue" Width="109" Click="SalvaIdioma_Click"/>
         <Label x:Name="labelProvider" Content="Provider:" HorizontalAlignment="Left" Margin="161,80,0,0" VerticalAlignment="Top" Foreground="Black" Height="26" Width="130"/>
         <ComboBox x:Name="comboBoxProvider" HorizontalAlignment="Left" Margin="167,113,0,0" VerticalAlignment="Top" Background="AliceBlue" Foreground="#FF64B2DA"  Width="200" SelectedIndex="0">

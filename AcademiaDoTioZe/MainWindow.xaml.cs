@@ -55,9 +55,8 @@ namespace AcademiaDoTioZe
 
         public void BotaoWindowConfig(object sender, RoutedEventArgs e)
         {
-            var providername = this.ProviderName;
-            var connection = this.ConnectionString;
-            MainFrame.Content = new WindowConfig(providername, connection);
+         
+            MainFrame.Content = new WindowConfig();
         }
 
         private void BotaoLogradouro(object sender, RoutedEventArgs e)
