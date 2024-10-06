@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace AcademiaDoTioZe
+namespace AcademiaDoTioZe.View
 {
     /// <summary>
     /// Interação lógica para PaginaAvaliacaoFisica.xam

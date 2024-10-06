@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Controls;
 using System.Configuration;
 using System.Data.Common;
+using AcademiaDoTioZe.View;
 
 namespace AcademiaDoTioZe
 {

@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace AcademiaDoTioZe
+namespace AcademiaDoTioZe.View
 {
     /// <summary>
     /// Lógica interna para WindowConfig.xaml

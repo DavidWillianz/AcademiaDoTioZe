@@ -13,11 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AcademiaDoTioZe
+
+/// <summary>
+/// Interação lógica para PaginaCadastroColaborador.xam
+/// </summary>
+
+namespace AcademiaDoTioZe.View
 {
-    /// <summary>
-    /// Interação lógica para PaginaCadastroColaborador.xam
-    /// </summary>
+
     public partial class PaginaCadastroColaborador : Page
     {
         public PaginaCadastroColaborador()
