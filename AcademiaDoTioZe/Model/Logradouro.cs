@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcademiaDoTioZe.Model
 {
-    public class Logradouro
+    public class Logradouro : ICloneable
     {
         public int Id { get; set; }
         public string Cep { get; set; }
@@ -17,16 +17,22 @@ namespace AcademiaDoTioZe.Model
         public string Uf { get; set; }
         public string Pais { get; set; }
         public string Complemento { get; set; }
-        public Logradouro(int id = 0, string cep = "", string rua = "", string bairro = "", string cidade = "", int numero = 0, string uf = "", string pais = "", string complemento = "")
+
+        //public Logradouro(int id = 0, string cep = "", string rua = "", string bairro = "", string cidade = "", int numero = 0, string uf = "", string pais = "", string complemento = "")
+        //{
+        //    Id = id;
+        //    Cep = cep;
+        //    Rua = rua;
+        //    Bairro = bairro;
+        //    Cidade = cidade;
+        //    Numero = numero;
+        //    Uf = uf;
+        //    Pais = pais;
+        //    Complemento = complemento;
+        //}
+        public object Clone()
         {
-            Id = id;
-            Cep = cep;
-            Rua = rua;
-            Bairro = bairro;
-            Cidade = cidade;
-            Numero = numero;
-            Uf = uf;
-            Pais = pais;
+            return this.MemberwiseClone();
         }
     }
 }

@@ -35,7 +35,7 @@
         <Rectangle HorizontalAlignment="Left" Height="163" Margin="16,216,0,0" Stroke="Black" VerticalAlignment="Top" Width="399" Fill="AliceBlue"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,240,0,0" TextWrapping="Wrap" Text="PLANO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
         <TextBlock HorizontalAlignment="Left" Margin="25,307,0,0" TextWrapping="Wrap" Text="1 - MENSAL, 2 - TRIMESTRAL, 3 - ANUAL" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
-    
+
 
         <TextBlock HorizontalAlignment="Left" Margin="264,240,0,0" TextWrapping="Wrap" Text="INICIO:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
         <TextBlock HorizontalAlignment="Left" Margin="264,307,0,0" TextWrapping="Wrap" Text="FIM:" VerticalAlignment="Top" RenderTransformOrigin="0.409,0.685"/>
@@ -51,6 +51,6 @@
         <TextBox x:Name="objetivoAluno" HorizontalAlignment="Left" Margin="435,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
         <TextBox x:Name="observacoes" HorizontalAlignment="Left" Margin="435,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="22"/>
 
-        <Button Content="SALVAR" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White"/>
+        <Button Content="CADASTRAR" HorizontalAlignment="Left" Margin="16,408,0,0" VerticalAlignment="Top" Width="106" Height="32" Background="#FF64B2DA" Foreground="White" Click="botaoCadastrar"/>
     </Grid>
 </Page>

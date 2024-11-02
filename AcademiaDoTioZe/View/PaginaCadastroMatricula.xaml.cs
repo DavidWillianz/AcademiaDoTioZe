@@ -55,5 +55,10 @@ namespace AcademiaDoTioZe.View
             observacoes.LostFocus += (sender, e) => ClassFuncoes.Box_LostFocus(sender, e);
 
         }
+
+        private void botaoCadastrar(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

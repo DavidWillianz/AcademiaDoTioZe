@@ -61,7 +61,12 @@ namespace AcademiaDoTioZe.View
 
         private void BotaoLogradouro(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new PaginaLogradouro();
+            MainFrame.Content = new PaginaListaLogradouro();
+
+            //if (framePrincipal.Content is not PaginaListaLogradouro)
+            //{
+            //    framePrincipal.Content = new PaginaListaLogradouro();
+            //}
         }
 
         private void BotaoCadastroAluno(object sender, RoutedEventArgs e)
